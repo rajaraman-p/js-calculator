@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajjuu's Smart Calculator</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="smart-calc.css" />
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="calculator favicon.ico">
+</head>
+<body>
+    <h3>Calculator with Speech Recogination ON/OFF</h3>
+    <div class="container">
+        <div class="display">
+            <span>
+                <label class="switch">
+                  <input type="checkbox" id="checkbox" onclick="toggle()">
+                  <span class="slider round"></span>
+                </label>
+                <p id="statement" class="display-s"></p>
+            </span>
+            <span>
+                <p id="result" class="display-r">0</p>
+            </span>
+        </div>
+        <div id="btns" class="btns"></div>
+    </div>
+    <script src="smart-calc.js"></script>
+</body>
+</html>

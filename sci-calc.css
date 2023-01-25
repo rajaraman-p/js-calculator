@@ -1,0 +1,92 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+@keyframes change-bg {
+    0%{
+    background-position: 0 50%; }
+    50% {
+      background-position: 100% 50%; }
+    100% {
+      background-position: 0 50%; }
+  }
+  body {
+    font-family: sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #db0dc7,#77188f, #c25fa3,#7a4b77);
+    background-size: 300% 300%;
+    animation: change-bg 12s ease-in-out infinite;
+
+  }
+
+.for{
+    box-shadow: 
+    0em 1.2em 1.2em rgba(0, 0, 0, 0.3),
+    inset 0em 1.2em 1.2em rgba(0, 0, 0, 0.3);
+}
+
+
+.center{
+    background: black;
+    border-radius: 25px; 
+    width: 350px;
+    border:none;
+}
+
+
+input[type="text"]{
+    height: 70px;
+    width: 260px;
+    background-color: #ecf0f3;
+    box-shadow: inset -5px -5px 12px #ffffff, 
+                inset 5px 5px 12px rgba(0,0,0, .16);
+    border:none;
+    border-radius: 30px;
+    color: rgb(70, 70, 70);
+    font-size: 50px;
+    text-align: end;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 20px;
+
+}
+
+form .buttons{
+    width:300px ;
+    margin:10px 25px 0px 25px ;
+    padding:10px 0px ;
+}
+
+input[type="button"]{
+    width:45px ;
+    height: 50px;
+    margin:5px ;
+    font-size: 22px;
+    line-height: 55px;
+    border-radius: 25%;
+    background-color: #ecf0f3;
+    background-color: #ecf0f3;
+    box-shadow: -1px -1px 2px #ffffff, 
+                  1px 1px 2px rgba(0,0,0, .16);
+    border:none;
+}
+
+input#clear{
+    background: aqua;
+    color: black;
+}
+
+input#equal{
+    width:230px ;
+    margin:10px 0px 10px 0px ;
+    font-size:30px ;
+    color: black ;
+    background: royalblue ;
+    border: 1px solid ;
+}
